@@ -75,3 +75,67 @@ This User Management project is a comprehensive web application that handles ess
 ├── package.json
 └── README.md
 ```
+
+# Installation and Setup
+
+## 1. Clone the repository:
+
+```plaintext
+git clone https://github.com/gkgautam995/user-management.git
+cd your-repository-name
+```
+
+## 2. Install dependencies:
+
+```plaintext
+npm install
+```
+
+## 3. Set up environment variables:
+
+- Create a .env file in the root directory.
+- Add the following environment variables:
+
+```plaintext
+PORT=3000
+DB_HOST=localhost
+DB_USER=user_admin
+DB_PASSWORD=NPfpbxuRyDfSfL6C
+DB_NAME=user_management
+JWT_SECRET=yourjwtsecret
+JWT_EXPIRES_IN=86400000
+```
+
+## 4. Run the application:
+
+```plaintext
+npm start
+```
+
+## 5. Open your browser:
+
+- Navigate to http://localhost:3000
+
+# Usage
+
+- **Register**: Go to /register to create a new account.
+- **Login**: Go to /login to sign in.
+- **Forgot Password**: Go to /forgotPassword to request a password reset link.
+- **Reset Password**: Follow the link received in the email to reset your password.
+- **Index**: Go to /index to view home page.
+
+# Contributing
+
+- Fork the repository.
+- Create a new branch (git checkout -b feature-branch).
+- Make your changes and commit them (git commit -m 'Add some feature').
+- Push to the branch (git push origin feature-branch).
+  = Create a new Pull Request.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+Thanks to all the open-source contributors who made this project possible.
