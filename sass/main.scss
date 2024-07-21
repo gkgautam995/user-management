@@ -1,0 +1,20 @@
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
+
+@import 'components/button';
+@import 'components/form';
+
+@import 'pages/home';
+/*
+COLORS:
+scss light red: #FE4E54;
+scss red: #F33565;
+scss dark red: #DF254D;
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/

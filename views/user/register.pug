@@ -1,0 +1,27 @@
+extends ../layouts/main
+
+block content
+  h2.heading-secondary.u-center-text Register
+  div.book__form
+    form.form(action='/register', method='POST')
+      div.form__group
+        input.form__input(type='text', placeholder="Full Name", name='name', required, autocomplete="off", maxlength='50')
+        label.form__label(for='name') Full Name
+      div.form__group
+        input.form__input(type='email', placeholder="Email Address", name='email', required, autocomplete="off")
+        label.form__label(for='email') Email Address
+      div.form__file-group
+        input.form__file-input(type='file', placeholder="Photo", name='photo', accept='.png, .jpeg, .jpg')
+        label.form__label(for='photo') Photo
+      div.form__group
+        input.form__input(type='password', placeholder="Password", name='password', required)
+        label.form__label(for='password') Password
+      div.form__group
+        input.form__input(type='password', placeholder="Confirm Password", name='confirmPassword', required)
+        label.form__label(for='confirmPassword') Confirm Password
+      div.form__group
+        button.btn.btn--red(type='submit') Register &rarr;
+      div
+        a.btn-text(href="/login") Login
+    if message
+      p= message

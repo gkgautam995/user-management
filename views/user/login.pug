@@ -1,0 +1,19 @@
+extends ../layouts/main
+
+block content
+  h2.heading-secondary.u-center-text Login
+  div.book__form
+    form.form(action='/login', method='POST')
+      div.form__group
+        input.form__input(type='email', placeholder="Email Address", name='email', required, autocomplete="off")
+        label.form__label(for='email') Email Address
+      div.form__group
+        input.form__input(type='password', placeholder="Password", name='password', required)
+        label.form__label(for='password') Password
+      div.form__group
+        button.btn.btn--red(type='submit') Login &rarr;
+      div.form__group
+        a.btn-text(href="/forgotPassword") Forgot Password?
+        a.btn-text(href="/register") Register
+    if message
+      p= message
